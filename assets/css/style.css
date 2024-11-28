@@ -1,3 +1,189 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6ec1e4, #4caf50);
+    color: #fff;
+    overflow: hidden; /* Evita rolagem desnecessária */
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box; /* Garante que padding não ultrapasse a largura */
+    overflow: hidden; /* Evita conteúdo estourar o limite */
+}
+
+/* Topo do Quiz */
+.top {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha verticalmente no centro */
+    margin-bottom: 20px;
+}
+
+.pontos {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin: 0; /* Remove margem extra */
+}
+
+
+.titu {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #4caf50;
+}
+
+#voltarSection {
+    margin: 0; /* Remove margem extra */
+}
+
+.btn-1 {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-1:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Pergunta e Respostas */
+.quiz {
+    text-align: center;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+.respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.respostas .btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    word-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; /* Alinha o texto das respostas à esquerda */
+    overflow-wrap: break-word; /* Garante que palavras longas quebrem */
+    white-space: normal; /* Permite que o texto quebre a linha */
+}
+
+/* .respostas .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    text-align: left;
+} */
+
+/* Botão Próximo */
+.prox {
+    margin-top: 20px;
+}
+
+#next-btn {
+    width: 100%;
+}
+
+#next-btn {
+    background-color: #4caf50; /* Azul claro */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 15px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de clique */
+    display: block; /* Garante que o botão seja um bloco */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto no botão */
+    transition: background-color 0.3s, transform 0.2s; /* Animações suaves */
+    width: 80%; /* Largura para dispositivos menores */
+    max-width: 200px; /* Limite de largura */
+}
+
+#next-btn:hover {
+    background-color: #357837; /* Azul mais escuro no hover */
+    transform: scale(1.05); /* Efeito de aumento */
+}
+/* Feedback para resposta correta */
+.correct {
+    background-color: #4caf50; /* Verde para correto */
+    color: white; /* Contraste melhorado */
+    border: 2px solid #000000; /* Borda para destaque */
+    transition: all 0.3s ease-in-out; /* Animação suave */
+}
+
+/* Feedback para resposta incorreta */
+.incorrect {
+    background-color: #f44336; /* Vermelho para incorreto */
+    color: white; /* Contraste melhorado */
+    border: 2px solid #d32f2f; /* Borda para destaque */
+    transition: all 0.3s ease-in-out; /* Animação suave */
+}
+
+/* Animação ao passar o mouse (caso precise manter interatividade depois do feedback) */
+
+
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .titu {
+        font-size: 1.3rem;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .btn, .btn-1 {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .respostas .btn {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/*
 html {
     background-color: #133942;
 }
@@ -18,7 +204,7 @@ body {
     height: 600px;
     border: 1px solid rgba(0, 0, 0, 0.50);
     background: #FBFBFB;
-    /* background-image: url(./../img/fundo.png); */
+    /* background-image: url(./../img/fundo.png); 
 }
 .top{
     height: 42px;
@@ -46,7 +232,7 @@ body {
     width: 80px;
     height: 20px;
 }
-/* area das perguntas */
+/* area das perguntas 
 .quiz{
     display: flex;
     justify-content: center;
@@ -105,13 +291,13 @@ body {
     display: flex;
     justify-content: center;
 }
-/* respostas DIV */
+/* respostas DIV 
 .respostas {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: red; */
+    /* background-color: red; 
 
 }
 .correct{
@@ -122,7 +308,7 @@ body {
 }
 
 
-/* local da pergunta */
+/* local da pergunta 
 
 .question {
     text-align: center;
@@ -132,7 +318,7 @@ body {
     height: 100px;
 }
 
-/* checkbox */
+/* checkbox 
 .alinhar {
     display: flex;
     flex-direction: row;

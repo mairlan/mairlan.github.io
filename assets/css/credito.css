@@ -1,3 +1,103 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6ec1e4, #4caf50);
+    color: #fff;
+    overflow: hidden; /* Evita rolagem desnecessária */
+}
+
+.container-cred {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden; /* Evita conteúdo excedente */
+}
+
+.box-cred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilo do texto */
+.div-1 {
+    text-align: center;
+}
+
+#credito {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+#credito br {
+    margin-bottom: 10px;
+}
+
+/* Botão */
+#botao-cred {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    max-width: 150px;
+}
+
+#botao-cred:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    background: rgb(129, 129, 129);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    #credito {
+        font-size: 0.9rem;
+    }
+
+    #botao-cred {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+}
+
+/*
 body {
     margin: 0;
     padding: 0;
