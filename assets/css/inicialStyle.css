@@ -13,11 +13,14 @@
 
         .container {
             text-align: center;
-            background: #ffffff;
+            background-image: url('../img/65.png');
+            background-repeat: no-repeat;
+            background-position: -200px;
+            background-size: 600px 450px;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            width: 90%;
+            width: 80%;
             max-width: 400px;
             height: 60%;
             display: flex;
@@ -31,7 +34,13 @@
         }
         h1#titulo{
             font-size: 3rem;
-            color: #4caf50;
+            color: #347536;
+            outline: black;
+            text-shadow: 
+                2px 2px 0 rgb(255, 255, 255), 
+                -2px 2px 0 rgb(255, 255, 255), 
+                2px -2px 0 rgb(255, 255, 255), 
+                -2px -2px 0 rgb(255, 255, 255); /* Sombras nos quatro lados */
         }
 
         /* Botão */
